@@ -1,0 +1,231 @@
+:root {
+    --background-color: #3c3834;
+    --color-secundario: #16e0cf;
+    --fondo-animacion: #504d4a;
+}
+
+/* GLOBALES */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family:sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    font-size: 2rem;
+}
+
+p {
+    color: white;
+}
+
+/* FUNCIONES */
+
+
+.secondary-color {
+    color: var(--color-secundario);
+}
+
+.contenedor-opciones {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.imgs-opciones {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+}
+
+/* WEB COMPONENTS */
+
+form-page {
+    display: none;
+}
+
+
+/* PAGINA PRINCIPAL */
+
+.contenedor-main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    margin-bottom: 50px;
+}
+
+.elementos-main {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.contenedor-main_imagen {
+    background-image: url("/img/main-img.png");
+    width: 400px;
+    height: 300px;
+}
+
+.contenedor-boton {
+    padding: 5px;
+}
+
+.btn-empezar {
+    padding: 20px 40px;
+    background-color: var(--color-secundario);
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+
+    transition: all 0.3s ease;
+
+}
+.btn-empezar:hover {
+
+    animation-name: AnimacionBorde;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+}
+
+@keyframes AnimacionBorde {
+    25% {
+        border-top: 5px solid white;
+    }
+    50% {
+        border-right: 5px solid white;
+    }
+    75% {
+        border-bottom: 5px solid white;
+    }
+    100% {
+        border-left: 5px solid white;
+    }
+}
+
+/* CALIDAD */
+
+.contenedor-opciones {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contenedor-opcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+    transition: all 0.3s ease;
+}
+.contenedor-opcion:hover {
+    background-color: var(--fondo-animacion);
+    transform: translateY(-20px);
+}
+
+.calidad-optima {
+    background-image: url("/img/answer-1-1.png");
+}
+
+.calidad-precio {
+    background-image: url("/img/answer-1-2.png");
+}
+
+.calidad-irrelevante {
+    background-image: url("/img/answer-1-3.png");
+}
+
+/* TIPO DE APLICACION */
+
+.aplicacion-android {
+    background-image: url("/img/answer-2-1.png");
+}
+
+.aplicacion-ios {
+    background-image: url("/img/answer-2-2.png");
+}
+
+.aplicacion-windows {
+    background-image: url("/img/answer-2-3.png");
+}
+
+.aplicacion-androidios {
+    background-image: url("/img/answer-2-4.png");
+}
+
+/* TIPO DE DISEÑO */
+
+.interfaz-sencilla {
+    background-image: url("/img/answer-3-1.png");
+}
+
+.interfaz-personalizada {
+    background-image: url("/img/answer-3-2.png");
+}
+
+.interfaz-replicada {
+    background-image: url("/img/answer-3-3.png");
+}
+
+.sin-interfaz {
+    background-image: url("/img/answer-3-4.png");
+}
+
+/* MONETIZACION */
+
+.montizacion-publicidad {
+    background-image: url("/img/answer-4-1.png");
+}
+
+.aplicacion-pago{
+    background-image: url("/img/answer-4-2.png");
+}
+
+.monetizacion-compras {
+    background-image: url("/img/answer-4-3.png");
+}
+
+.monetizacion-otros {
+    background-image: url("/img/answer-4-4.png");
+}
+
+/* AUTENTICACION */
+
+.redes-email {
+    background-image: url("/img/answer-5-1.png");
+}
+
+.autenticacion-email {
+    background-image: url("/img/answer-5-1.png");
+}
+
+.sin-autenticacion {
+    background-image: url("/img/answer-5-1.png");
+}
+
+.autenticacion-otros {
+    background-image: url("/img/answer-5-1.png");
+}
