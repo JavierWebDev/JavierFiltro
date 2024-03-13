@@ -233,12 +233,18 @@ form-page {
 /* ELEMENTO MODAL */
 
 .modal-resumen {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 200px;
     background-color: white;
     position: fixed;
-    top: 25%;
-    left: 50%;
+    left: 44%;
+
     border: solid 2px var(--color-secundario);
-    box-shadow: 0px 0px 1000px rgba(0, 0, 0, 0.055);
+    -webkit-box-shadow: 0px 1px 51px 100% rgba(0,0,0,0.34);
+    -moz-box-shadow: 0px 1px 51px 200px rgba(0,0,0,0.34);
+    box-shadow: 0px 1px 51px 800px rgba(0,0,0,0.34);
+}
+
+.txt-modal {
+    color: black;
 }
