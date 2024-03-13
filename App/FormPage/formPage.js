@@ -325,11 +325,27 @@ export class FormPage extends HTMLElement {
 
     EnviarFormulario = () => {
         const BtnEnviarForm = document.getElementById("BtnEnviarFinal")
+        const main = document.querySelector("main")
 
         BtnEnviarForm.addEventListener("click", (e) => {
             postDatas(OpcionesElegidas)
 
+            let modal = document.createElement("dialog")
+            modal.classList.add("modal-resumen")
+
+            modal.innerHTML = `
+            <p>${OpcionesElegidas.calidad}</p>
+            <p>${OpcionesElegidas.plataforma}</p>
+            <p>${OpcionesElegidas.interfaz}</p>
+            <p>${OpcionesElegidas.monetizacion}</p>
+
+            <a href="#" id="CerrarModal">X</a>
+            `
+            modal.open = true
+
             
+
+            main.appendChild(modal)
 
             e.preventDefault()
             e.stopImmediatePropagation()
